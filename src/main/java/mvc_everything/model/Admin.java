@@ -11,6 +11,7 @@ import javax.persistence.Table;
 public class Admin {
     @Id
     @Column(name = "a_name", length = 64, nullable = false)
+
     private String username;
 
     @Column(name = "pass", length = 64, nullable = false)
@@ -21,7 +22,6 @@ public class Admin {
 
     @Column(name = "l_name", length = 64, nullable = false)
     private String lastname;
-
 
     private Date signedInDate;
 
