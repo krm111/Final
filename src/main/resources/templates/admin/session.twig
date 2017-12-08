@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Everything Music Player</title>
+    <style>
+        body{}
+
+        #principal{
+            width: 1000px;
+            border: 1px solid #000000;
+            margin: 20px auto;
+        }
+
+        #ipage{
+            height: 100px;
+            border: 1px solid #000000;
+            margin: 10px;
+            text-align:center;
+        }
+
+        #menu{
+            height: 30px;
+            border: 1px solid #000000;
+            margin: 10px;
+            text-align:center;
+        }
+
+        #cleft{
+            width: 360px;
+            border: 1px solid #000000;
+            margin: 10px;
+            float: left;
+            text-align:center;
+        }
+
+        #cright{
+            width: 596px;
+            border: 1px solid #000000;
+            margin: 10px;
+            float: right;
+        }
+
+        .clear{
+            clear: both;
+        }
+
+        #fpage{
+            height: 30px;
+            border: 1px solid #000000;
+            margin: 10px;
+            text-align:center;
+        }
+
+    </style>
+</head>
+<body>
+<div id="principal">
+    <div id="ipage">
+        <p style="font-size: 30px">EVERYTHING</p>
+    </div>
+    <div id="menu">
+        <p style="font-size: 10px">Welcome</p>
+    </div>
+    <div id="cleft">
+        <p style="font-size: 20px">Control Panel</p>
+    </div>
+    <div id="cright">
+            <pre style="font-size: 5px;">
+                Zq0000GZEPNq0qNNO88N8Z0GZXE05u2XEkX1NquX8FPPP080N0GPMO88OOMMMMBBBOMMBB@MMM@B@BBB@B@B@MBB@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@@@B@B@B@B@B@B@B@B@B@B@@
+                NPqPkNXNqqPqqPkEqNXXSSqX12USUuFN55Ju52L5SFU1Uk5PFXSkZNXZ0qqZEMOEEOMM8MMMMBMBBBM@M@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@
+                ENZq0q0qqPENEkqq0SqqPkNk2UkjJJ1SXjLuSFEES12uuu22SSqNSF1U00PkEOP5GMBOMMMMBMMBMOBMMB@B@@@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B
+                0NXqP0P0FX0G0qXqSFkFNX2FkF515SFP2UU01XGMqJFZPFuu2EXqXNkEq0NEq8OZZMMMMMOMMMMMMMM@OBBBB@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@
+                ZPqXqPqNPXZ00E0NXuXF552J5F5u515ku18G@qi:r0X2U2S5O0FFSF8EZ08qEOO0OGG8OOMMMOMMBMBB@M@BBBBB@B@@@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B
+                0qq0N000XP0EPNFPP52X15USuU2jJuukFqu757   @@BkqGZPkFP1kq8qO0XSE8EGOG8OMOMMMMBMMO@BBMBB@B@B@B@B@B@@@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@
+                0XqkNX0qNkPqXSS2X1kSS1k1qFuv5kZGMZr     :B@8OOO8OGGX2j5qG0OEPNOGZEGZOMMOMOMOBMMMBM@BBB@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B
+                qq0qkqPqXk5SS05SXX5qXkUk2jYq8M8OGOGivB: 7@BZEGZGZ88M80SSqZNqqP8OE8O8E8MOOMO88MOMMMM@B@M0BBM@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@
+                NkXXZX0N0qXFXk5kXkS5FSkj2qMOMG8EGGMB@P   E@NZEGE8ZGZOOMO0PNSqEOGN0PqZE8ZO8MOO8OOMOMMMXBMBMMMBM@M@BBBBM@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B
+                SFPNNNNEkSFFFk1k1FU12SPMMMOOZZZGN0qMBi   5ME0EE8ZGE8Z8GMMv2OXE0EkNFkNZE8Z88M8OOMOMOMuOMMMBMBMBMBMBMBMBMBMBM@MBB@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@
+                PXZPX2FkqkkFkXS5k52uFkPM@@BMOEGNENqXBq:.5BGqE08OOEGZOZOM@r JMqXPPX0P0PE0GZ8G8EGZ8GO8MOMOMMMOMMMMBMBMBMBMMMBM@BBBBMBB@B@B@B@B@B@B@@@B@B@B@B@B@B@B@B@@@B
+                NqEqSS5XqNkXFk5U1P55Fi :UPFu08EG0EXqOBN:780SkqkuX8EGEGM@j:  70j25uFPSqkq0ENEN0NZ0GGOGZGOGO8MOMOMOMMMMMMBMBMBMBM@M@B@B@B@B@B@@@B@B@B@B@@@B@@@B@B@@@B@B@
+                EkENSkNPXXkF15Su2U5XF    ii.kGZq0qqPMMM0LiuuFSY 70G0ZZENUi;  iL7uu51S5SFXSPSPSkkPPPqEPZ0GZGZOOOGO8M8MOMMMMMMMMMB0O@B@BBB@B@B@B@B@B@B@@@B@@@B@@@B@G78@@
+                PqNEPNNPukSS1S122Uu10XP8NO8OG80ENNP005;SE..Y255k00ZZE@::B@@MuX7riii::,...::i::.,,,..,iir7LY5S008GOGOGOOM8OOMOMMMMBM@MBBBB@BBB@uFB@B@B@B@B08MEZZZO88OB@
+                ESPXX55U15F2F1SFS2uJBBBMMG8EZqqXqN8Fr  :7   rJPXG0ZG@k i@5O@@Bu       ...  .,,:::,,...        .,ii7vuuFPEZO8MOOOMOMMBOZMBM@B@@@B@MOqPF1uuLJJL7uYjjUuUj
+                Nq0EPXu552YuUSPq5SuUMM8GGZ00Xk5SkGi.  ,.:;   :7SqOMPv  MZ G@B@M:rv7rLJLJL7Y1uU1YkqqZNqF5uuL7::..       .:rv1kEZM8OOMOMMBMBOGXSuuJuu5SEEOOBBBB@MBMMO8qk
+                qFqkqF5UFS15121uS5LuBOOG8EG0NXkSZ:.r .i:..   ,:7Z7     ;  @BBM8ii::..   .  .....,.::7v7uXq8O0GOENkvrLri..    .:r7755PkFuY7v7YuSqOMBB@MBB@@8B@B@B@B@B@B
+                PkqN5XkSUXS511uU2Fv5BM8OG8GGN0X8r.U  rL7,    ::ru :j8@X  kBkJ2v    ..,,:::::::::,.       ,:7L5PZ8MZ8OOZEXX2j7i,       .ivkZMB@B@B@B@BSP@@@8@B@B@B@B@@@
+                GNXFX2k5SuUu525221FP@OOO8ZOZGEEO,:r :7i,:,    ;;57 Z@BU  BN J,i:rrJUXXFFX1qXPX00NqP2J7r:i..   .,iru1kPE005Uvr:,...::i:::i,rY5qOM@B@B@B@8OB@B@B@B@B@@@@
+                qk5SkkU51jjF55FX1UJZMMOOGOZGEZ0M:vr :ir...    7L5  1Gj   v.:r;rvrY125FFkLUNXSkSqPXNGqZGGGZk2vr::.. . ... . ,:7JFX8ZM8MZkP1Yvrr;7L1uqO@B@B@B@B@B@B@B@B@
+                PFkNS5S55uF2Fu12k1JNBOMOOZ8G8EZOU:U ,vvLjri  ,1rM  :      ,7v7L777jJu2kkvJ01kkPFqSN0E0E0GZO8GP17i.        .ij2FM@O@BMMBM@B@@MO8PSuUYJYu1XPG8MMBBBBBMM8
+                XSqE21FS22UujujJu5YOMMOO8O88Z8EGMv:Y77LuJYrrL2r5B  :7      .vvLLvJYvJP55qXSPSSkPSqkXkPF5uLi:.    ..:i7vJvr:,...i7jqMB@B@B@B@B@B@@@@@MME0SS21uujuJuYuju
+                XFGSPU1FFuu21U1YF2uOMOM8OG88OEGZGMSrLjF21u51J7UM@           ::ii;i7vuvvv2u2UF1521JLr:,,.     .:rLukXEZ8OMMMG01Lr:,::iv5NMB@B@B@@@B@B@B@B@B@B@MBOMOMM@B
+                kS52U5FFuF5kuuJ2121BOMOMOOGOGOGGEOBMXS7jJ2J2X@O@B         ,:       ....,..,,,,..        .:rYuXqGkZG8ZO8OOMM@B@B@MM801uvv7LjFqOM@B@B@B@@@B@B@B@B@B@B@B@
+                8PP1uSPU55uu1u5k5J0OMOMOM8M8MG8Z8OMZ@B :5@@B@XZBS         v77ri:,..               ,:rrYuUSZZ8Z8888OOOOMOMOMMBMBM@B@B@@@BBOGqXF51kkq0GGOOMOMMMOO88ZZ0EN
+                ZZXXuSu2SS25Uu2Fr7MMOBMMOO8MOOG8GMOOBO  5@O@r @@.        JuujUJYjJ7LYjvLvjYYLuJ2FSkEZZGOOM8MZOOMOMMMMMMMMMMMMBMBMBB@B@B@@@B@B@B@BBOOE0XXkXSkkqP00OOMM@
+                q5kS5u1PXv1L2L7v:2@OMMB8MOO8M8OGM8M8@8  JBOB: .U        vZ1LL5SJj11j5Pq0NXNX0EGZGG8GMOMOMMMMMMBOMMMMMMBMBMBMBMBBBM@B@M@B@B@B@@@B@B@B@B@B@B@B@B@@@B@B@B
+                FFqP11u2vLLjj2YLL@MMO@OOOMOMOOOMM8MMBM  Y@M@L          .7vLu1GXS1SSqkXqZPE0ZZGEOEG8MMMOMMBMBMBMBMBBBMBBBMBB@BBB@BBB@B@B@B@B@B@B@B@B@B@B@B@B@@@B@@@@@@@
+                Xu5LuU7v5LjYL7;L@BBM@BMOMOMOMOBOM8@M@B  uBBM@E; j7i.   i7vvL25UuS2FXqFXXq0EZOZ8Z8GMMMOBMBMBMBBBMBMBBBMBB@B@B@B@B@B@B@B@B@BBM@B@B@B@@@@BBB8@B@B@O@B@B@@
+                5YrruPuJXk15i:u@B@B@B@B@MMOMM@MvB@MMB@  .@BBB@Gi FNX5SGFuSk82uu2UkFqNqk0Z8q8EZZMMMOMMBMBMBB@MBBBB@B@B@B@B@B@@@B@B@B@B@B@BBOBMBB@BS2@@@0NZMBBBB08O@BMP@
+                q1F2uU1LU0F7rX@B@O2vL5@B@MMMBBi:@BSF@M  2BBB0 B@Xvuj50ESNFqXFFENNkqqZPEGOE8EOMOZMOOM@MBB@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@MMB@BMM@B@05E@MBOM1PMBONMMM@MMB
+                kFPSuuj7vkrYB@BL       ,B@MBBB XB@,UBB  0@M@G  5@@5uuv0EPXPXuXN8NqN8qEEGEOEGk@GMMMOMB@B@B@B@BBB@B@B@B@B@B@B@B@B@B@B@B@B@BBB@M@BMk@k,r88@M@B@B@B@M@G0E@
+                qUjLuYu;rUSB@u          .B@B@  @@B S@B  OBBB@.  :B@77vuFEkEk2XEN0NE0ZEEZOMME18jMBMBOMB@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@B@BM8@B@8UrOrrOMBM7YM@@GOMMMBOM
+                uvLL5kuLY@B@             @B8  i@B0 8@@ .B@M@B.   rB@i7u55SU12qPk0Zq0EONG8ZEEF8ZBOMMBB@ZBB@B@B@B@B@@@B@B@B@B@B@B@B@B@B@B@@MLM@jr@BZBBBBOGBkO@M@B@BBB@BM
+                vrvirr1G@B2             :i    BB@, O@@ :@BBB@  ,iL;B@,.7v7JUk5SSNZZ0ZZ8OBOM0qUMMMOOM@G,5@B@B@B@B@M@B@B@B@B@BB@@B@B@B@B@BMBOB@1M@EM@qqM@F.P@BMMBBM@@BMB
+                72v;.iB@B:              B@   .@@M  BB@.u@@B@8   UU:5B@7Y1U2NPPX0Fq0GEZNq0GMG0UOMOMOMOPBGM@@@B@B@MMM@B@BBMMMBB@B@B@BBB@BBFE@5P@OBkM0ENMM@Y;:2BN8BE@MMM@
+                2v;L0B@B  .            .@Bi  B@Bi  B@B;M@UPBM   PUv7BBZ;2j5XEPNkkk00ESqXPEMXN@MGOOO8MO@qNB@MMMBMBMBBBMMOMMMMMOMMMMBMMOMZPPZvUuOJM@OOXEBX@BON@vSXBBOqMM
+                .iP@B@B. ..             @@Biu@@8  .@ZMM@BiX@@    FvvjZBYL11SFXSNXNPqkqkXP0MFXBOOGO8MOGBOJ@MBOMOMMMOMOMOOMM8BOMMMOO8MMMGMu2L@E:qME8E2B@OOBMO@BMMBBB8OMM
+                JE@BBBq  :           . ,@BBB@B@   :B:G@BY X@@   ,JLiu7@87Uu2qkFq0SP00NNkE0MLqOOGGZOMqk@BJOMOMOOOMOMG88M8O850MOMMMOO8BOOBE78E70qqMEO5rMLL@Z8G7OSF@MBMMO
+                B@BqB@. ..           7 2BMOMM@    7@;B578 u@B  ikYv7S:B@LvLY1S5S5X0NkPX0NZO7qGEEEGP@7XOB5N888MOOG8GO8OGO8OOGMMOMOEOEEMEYO@MYv@OkB@MqqXjEEOu17XkjXZOMOO
+                @O;N@k  .           .: BB8O8OMv   NBMGkB@ 2B@  rYrri5 @B5iU5XXXkkSqSPqNNNE8iEE0EE0087OGGNqO88GMOOG8GOZ8G8PMPGG0ZGGu0Oqu LJSY2PMrLGMMBMG8GG20OZBMOqOGZZ
+                2 u@B. .          .  :2@G8EGEGB@OMBBJOB@i 5@M  7v7i:u O@2.1SLUPXSPPqZZk0PZPiE8080ZOiLBG8NPGOO@M@MM8GEGGO0NME0FuXEP1UU0EBO2uYMZ8qr F0FZ08ZXOMFF8M0OZGEM
+                 :@BM :              .ZGqSPkqkN0MOM5;B@.  PBM  2jvL2S:MMqi1j5uNkqE8ZOE1PN0qrMZGNZGM1OBBZGX8MBr ,ZOBM88OOZEM:vGrvMF0;.vGUZMP;MZqNNk0EGkUPMSGG8GMPP0OZOX
+                :GM@7 :             i jZ5F1S5FSN0GMr8O    0@X  FY2vZuLMBPiJjFSPN1NPFP8uEGMJ7BOGMMMq@M7UOOqOZ.,L  kNSMO0P7kr .;PEvrv0L7ELiOU2MU2BO:rSuLv5q88N0MG8MMMMZk
+                0ZGB;.            .kZ LEF2F1kFXqZM5r@.  . MBj .YuL7rivM50.vr, .:.   ,iii7Y .Uii;L, .  :7u77:i5Nv .::7vvi   ,7  . .,:,:i:. .ir     .:7:... ,   :ivvi,,.
+                E0ZO0:         J5PO@J rE5F1kXZ08Oq.:O  ..:OBi ,L::;:.F27k .ri.  i:  .,  ::  :,       i:,::.::i. :    :i  ,::,r:... ..:.,.;.  .  r:  ..,v:iur,  ..  .:.
+                qXGNS         ,S@MMO7:7Z0ZO8851Mj  FY  ..JP8. r51U52LurSkrjSNq: rXNk0N7LNN,L2F077PEPGEXXi7k:.r.i::vSkL,.:,iv;Jv.ri72vi.ivkJvr5rrZOvLPF1YPqqGGGOGMGMU.L
+                XNG r:       ..  ,iLi27JL7i:  2N. :B   :.ZJO  iU2uYJJJrP2LvYj2k0LSkXSX12XSiGFuqGSkFXkXkXSErL7 uOu2O8k7,uXj:L7uvqi7j5q2 rr :8LL7UUEYPZEEXkX5q2XSSFqE8SN
+                qPGi ;:     .:.    ..ii      2M. ,@i  .,iN21  iFJ7vLvrjSJLYvYLu1511USS1L52rkkkS1uU511USFS5SqOqP1qkkF5LPkq5Y5JiU5jJUv20LUXvFS1YFXS1LF11P11u5Y21F155FSPF
+                O:.qU...   .:... .iu:Lii    :u.,.Ur   :.S2Y.   uJ;7jLLYuvjYLYuJ2FuJU22JJUu7FjuuU5k15U2u2251kSkU22UUujS11U5X5YXv7UFY,2LLXFF155SU1212Uuu;Uju7uJuuuu1u12J
+                OL  5Pi   .i......ii. iU, .   .:    .i::M.  .  rj777LYJLYYYvYjuuujUYYYjJ1jv12uuJ2U2U1112S2uu1j2UFjuuuLu7YU2JUuUL7vJUjr12UuUU12112jJu1U2uU1uu1UUjujuYuL
+                rJ1. rS277ui .....    .. ....,i, . :ii.2:  . ,YLvLvLvYLjLJYJLjYLLuYYYjLJuuv5uUu22F2Uu5uuJuY2UUJuuuUJJJJjYuYuYuuUL1u2JjYJuuJ2L5;irYjujUjuL51jYJY552ujL1
+                : 5X: .,iiv:....... . . ... .:i . :r::,  ... iL7r7LvLvJYLvJYYLLvLYJ7vvLL2LvuuYuuuJuuULjJjLuYuJjYYLFjLJujuYjJuJJYuu7uLLJJJjuuuu7vujuLuuuLuUuLujjJJvYLuL
+                1, v15Y7i: ..,..............,7,..,ri:i....., r77rrvLvv7JLLLJLujJJJYJ7vvYujv2uYvUuuL2Uuu5jJUFUJu77ujULJJJYJYjYjYuYu7i7UjujujujuJuuJJujuJuJuYujuLUYuYuJL
+                Y7i    .i:                  :: .ii:,.,.   ,  iri;;rrrrrr777777v7Lvv7L7v7vrrLYLvvj7YLLvLvY7LLvrLvvvvvL7vLLvvvv7vvv7J7LvLvLvvvvvLvLvLvvvLvLvvvvr77jJuLjY
+            </pre>
+    </div>
+    <div class="clear"></div>
+    <div id="fpage">
+        <p style="font-size: 10px">UCSP</p>
+    </div>
+</div>
+</body>
+</html>

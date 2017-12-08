@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Datos del Usuario: {{fullName}}</title>
+  </head>
+  <body>
+   <form action="save" method="POST">
+	<table border="1">
+	  <tr>
+	    <th>Username:</th>
+
+ {% if (user.username) %}
+	    <td><input name="username" value="{{user.username}}" type="hidden" />{{user.username}}</td>
+ {% else %}
+	    <td><input name="username" /></td>
+ {% endif %}
+
+	  </tr>
+		<tr>
+			<th>Password:</th>
+			<td><input name="password" value="{{user.password}}" /></td>
+		</tr>
+	  <tr>
+	    <th>Firstname:</th>
+	    <td><input name="firstname" value="{{user.firstname}}" /></td>
+	  </tr>
+	  <tr>
+	    <th>Lastname:</th>
+	    <td><input name="lastname" value="{{user.lastname}}" /></td>
+	  </tr>
+	  <tr>
+	    <th>Gender:</th>
+	    <td><input name="gender" value="{{user.gender}}" /></td>
+	  </tr>
+	</table>
+    <br>
+	<input type="submit" value="OK" />
+	<input type="button" value="Cancel" onclick="history.back();" />
+   </form>
+  </body>
+</html>

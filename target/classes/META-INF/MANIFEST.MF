@@ -1,9 +1,10 @@
+
 Manifest-Version: 1.0
 Implementation-Title: mvc_everything
 Implementation-Version: 1.0-SNAPSHOT
-Built-By: anibal
+Built-By: rodrigo
 Implementation-Vendor-Id: com.everything.musicplayer
-Build-Jdk: 1.8.0_151
+Build-Jdk: 1.8.0_141
 Implementation-URL: http://projects.spring.io/spring-boot/mvc_everythi
  ng/
 Created-By: Maven Integration for Eclipse
