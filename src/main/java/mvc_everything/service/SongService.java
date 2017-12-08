@@ -25,7 +25,7 @@ public class SongService {
 	public List<Song> topSong(int top){
 		List<Song> topSong=new ArrayList<Song>();
 		List<Song> orderSong=repository.songTop();
-		for (int i=0;i<10 && i<orderSong.size();i++){
+		for (int i=0;i<top && i<orderSong.size();i++){
 			topSong.add(orderSong.get(i));
 		}
 		return topSong;

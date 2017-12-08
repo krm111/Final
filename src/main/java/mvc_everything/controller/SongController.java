@@ -24,8 +24,8 @@ public class SongController {
 	}
 	
 	@RequestMapping(value = "/topSong", method= RequestMethod.GET)
-	String showSong(ModelMap model){
-		List<Song> canciones = songService.topSong(10);
+	String showSong(ModelMap model,int top){
+		List<Song> canciones = songService.topSong(top);
 		model.addAttribute("canciones",canciones);
 		return "canciones";
 	}
