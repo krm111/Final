@@ -13,7 +13,6 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "song")
-
 public class Song {
 	@Id
 	@Column(length=16)

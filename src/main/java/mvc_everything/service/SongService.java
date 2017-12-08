@@ -5,8 +5,10 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import isi.model.Song;
-import isi.repository.SongRepository;
+import mvc_everything.model.Song;
+import mvc_everything.repository.SongRepository;
+
+
 
 public class SongService {
 	@Autowired
@@ -28,4 +30,17 @@ public class SongService {
 		}
 		return topSong;
 	}
+	
+	public Song save(Song songChanged) {
+		System.out.println("Modificando: " + songChanged.getId_song());
+		Song song = repository.findOne(songChanged.getId_song().toString());
+		if (song != null) {
+		  	song.setSong_name(songChanged.getSong_name());
+		  	
+		} 
+		else {
+		    song = songChanged;
+		}
+		return repository.save(song);
+		  }
 }
